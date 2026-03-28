@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* CRM Technology palette - dark navy theme */
+    --background: 0.961 0.006 238;
+    --foreground: 0.2 0.028 258;
+    --card: 1 0 0;
+    --card-foreground: 0.2 0.028 258;
+    --popover: 1 0 0;
+    --popover-foreground: 0.2 0.028 258;
+    --primary: 0.22 0.065 242;
+    --primary-foreground: 0.985 0 0;
+    --secondary: 0.92 0.01 238;
+    --secondary-foreground: 0.22 0.065 242;
+    --muted: 0.95 0.006 238;
+    --muted-foreground: 0.53 0.018 256;
+    --accent: 0.63 0.19 35;
+    --accent-foreground: 0.985 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.92 0.01 238;
+    --input: 0.92 0.01 238;
+    --ring: 0.22 0.065 242;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.2 0.028 258;
+    --sidebar-primary: 0.22 0.065 242;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.95 0.006 238;
+    --sidebar-accent-foreground: 0.22 0.065 242;
+    --sidebar-border: 0.92 0.01 238;
+    --sidebar-ring: 0.22 0.065 242;
+    /* Custom tokens */
+    --navy: 0.22 0.065 242;
+    --orange: 0.63 0.19 35;
+    --footer-bg: 0.25 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
